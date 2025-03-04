@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        @font-face {
+            font-family: 'Century Gothic';
+            src: local('Century Gothic'), local('Gothic'),
+                 url('fonts/CenturyGothic.woff2') format('woff2'),
+                 url('fonts/CenturyGothic.woff') format('woff'),
+                 url('fonts/CenturyGothic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background: #000;
+            font-family: "Century Gothic", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            overflow-y: auto;
+        }
+
+        .card {
+            position: relative;
+            width: 320px;
+            border-radius: 15px;
+            overflow: hidden;
+            background: url('background.png') no-repeat center center/cover;
+            color: #ccccccff;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #cdac55ff;
+        }
+
+        h2 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .company-logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .about {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ccccccff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            width: 80%;
+            overflow: hidden;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .buttons button {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ccccccff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <img src="profile.png" alt="Profile Picture" class="profile-img">
+            <h2>Billy Lai</h2>
+            <p>Sales Executive</p>
+            <div class="company">
+                <img src="company-logo.png" alt="Company Logo" class="company-logo">
+                <p>Tong Ji Cheng</p>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                <a href="#"><img src="website-icon.png" alt="Website"></a>
+                <a href="#"><img src="email-icon.png" alt="Email"></a>
+                <a href="#"><img src="share-icon.png" alt="Share"></a>
+            </div>
+            <div class="buttons">
+                <button>Add to Contact</button>
+                <button>Products</button>
+            </div>
+            <div class="about">
+                <h3>About Me</h3>
+                <p>As a sales executive at Tong Ji Cheng, I specialize in frozen dumplings, working to connect customers with high-quality products. My role involves building relationships, expanding market reach, and ensuring our dumplings reach more tables.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
