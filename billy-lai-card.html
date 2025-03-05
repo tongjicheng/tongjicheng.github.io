@@ -25,6 +25,7 @@
             min-height: 100vh;
             margin: 0;
             overflow-y: auto;
+            user-select: none; /* Prevent selection */
         }
 
         .card {
@@ -46,11 +47,28 @@
             align-items: center;
         }
 
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 2px solid #cdac55ff;
+            pointer-events: none; /* Prevent drag */
+        }
+
+        /* Transparent overlay to block image saving */
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 1;
         }
 
         h2 {
@@ -73,6 +91,7 @@
         .company-logo {
             width: 40px;
             height: 40px;
+            pointer-events: none; /* Prevent drag */
         }
 
         .icons {
@@ -96,6 +115,7 @@
         .icons img {
             width: 24px;
             height: 24px;
+            pointer-events: none; /* Prevent drag */
         }
 
         .about {
@@ -126,16 +146,38 @@
             cursor: pointer;
             font-size: 14px;
         }
+
+        /* Disable selection */
+        img, p, h2, h3 {
+            user-select: none;
+        }
     </style>
+    <script>
+        // Disable right-click on the entire page
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Prevent image dragging
+        document.addEventListener('dragstart', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </head>
 <body>
     <div class="card">
         <div class="content">
-            <img src="profile.png" alt="Profile Picture" class="profile-img">
+            <div class="image-container">
+                <img src="profile.png" alt="Profile Picture" class="profile-img">
+                <div class="image-overlay"></div>
+            </div>
             <h2>Billy Lai</h2>
             <p>Sales Executive</p>
             <div class="company">
-                <img src="company-logo.png" alt="Company Logo" class="company-logo">
+                <div class="image-container">
+                    <img src="company-logo.png" alt="Company Logo" class="company-logo">
+                    <div class="image-overlay"></div>
+                </div>
                 <p>Tong Ji Cheng</p>
             </div>
             <div class="icons">
