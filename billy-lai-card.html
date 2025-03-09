@@ -181,14 +181,25 @@
                 <p>Tong Ji Cheng</p>
             </div>
             <div class="icons">
-                <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
-                <a href="#"><img src="website-icon.png" alt="Website"></a>
-                <a href="#"><img src="email-icon.png" alt="Email"></a>
-                <a href="#"><img src="share-icon.png" alt="Share"></a>
+                <a href="https://wa.me/60146749733?text=Hello%20Billy,%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank">
+                    <img src="whatsapp-icon.png" alt="WhatsApp">
+                </a>
+                <a href="https://tongjicheng.github.io/" target="_blank">
+                    <img src="website-icon.png" alt="Website">
+                </a>
+
+                <a href="mailto:tongjicheng8@gmail.com?subject=Inquiry&body=Hello Billy, I would like to know more about your products.">
+                    <img src="email-icon.png" alt="Email">
+                </a>
+                <a href="#" onclick="sharePage(); return false;">
+                    <img src="share-icon.png" alt="Share">
+                </a>
             </div>
             <div class="buttons">
-                <button>Add to Contact</button>
-                <button>Products</button>
+                <button onclick="window.location.href='https://tongjicheng.github.io/Contact-Billy.vcf'">
+                    Add to Contact
+                </button>
+                <button onclick="window.location.href='https://tongjicheng.github.io/#our-products'">Products</button>
             </div>
             <div class="about">
                 <h3>About Me</h3>
@@ -196,5 +207,29 @@
             </div>
         </div>
     </div>
+    <script>
+        function sharePage() {
+        const shareData = {
+            title: 'Billy Lai - Sales Executive',
+            text: 'Check out my digital business card!',
+             url: 'https://tongjicheng.github.io/billy-lai-card.html'
+        };
+
+        if (navigator.share) {
+        navigator.share(shareData).catch((error) => console.log('Error sharing:', error));
+    } else {
+        // Improved clipboard copy fallback
+        navigator.clipboard.writeText(window.location.href).then(() => {
+            alert("Link copied to clipboard!");
+        }).catch((err) => {
+            console.error('Could not copy link: ', err);
+        });
+    }
+}
+    
+        function downloadVCard() {
+            window.location.href = 'contact.vcf';
+        }
+    </script>
 </body>
 </html>
