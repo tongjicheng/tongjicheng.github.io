@@ -301,17 +301,18 @@
     }
 }
 .chinese-title-text { 
-  font-family: "Ma Shan Zheng", cursive;
-  font-weight: 100;
+    font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 28px;
 }
 .chinese-text { 
-  font-family: "Ma Shan Zheng", cursive;
-  font-weight: 100;
+    font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 400;
   font-style: normal;
-  font-size: 19px;
+  font-size: 16px;  
 }
+
 
 
 .products-section {
@@ -656,7 +657,7 @@
     </div>
 </section> 
 
-<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
 
 
 <section id="our-products" class="products-section">
@@ -857,7 +858,6 @@ document.addEventListener("contextmenu", function (event) {
     document.addEventListener("keydown", function (event) {
         if (event.key === "PrintScreen") {
             event.preventDefault();
-            alert("Screenshots are disabled on this site.");
         }
     });
 
@@ -865,7 +865,6 @@ document.addEventListener("contextmenu", function (event) {
     document.addEventListener("keyup", function (event) {
         if (event.key === "PrintScreen") {
             navigator.clipboard.writeText(""); 
-            alert("Screenshots are disabled on this site.");
         }
     });
 
