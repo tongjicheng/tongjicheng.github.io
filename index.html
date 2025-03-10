@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tong Ji Cheng - Frozen Dumpling in Sabah</title>
-    <meta name="description" content="Tong Ji Cheng offers high-quality, handmade frozen dumplings. Discover our delicious flavors and order now!">
-    <meta name="keywords" content="dumplings, frozen dumplings, authentic dumplings, Tong Ji Cheng, Kota Kinabalu, Malaysia">
-    <meta name="author" content="Tong Ji Cheng">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="Enjoy delicious frozen dumplings in Kota Kinabalu, Malaysia. Order now and connect with us on WhatsApp, Facebook, Instagram, and TikTok!" />
+    
+    <meta name="keywords" content="Frozen Dumplings, Sabah Dumplings, Kota Kinabalu Food, Chinese Dumplings, Handmade Dumplings, Halal Dumplings">
+
+        <meta property="og:title" content="Tong Ji Cheng - Frozen Dumplings in Sabah">
+        <meta property="og:description" content="Enjoy delicious frozen dumplings in Kota Kinabalu, Malaysia. Order now and connect with us on WhatsApp, Facebook, Instagram, and TikTok!">
+        <meta property="og:image" content="https://tongjicheng.github.io/logo.webp">
+        <meta property="og:url" content="https://tongjicheng.github.io/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Tong Ji Cheng">
+        <meta property="og:locale" content="en_US">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
     <!-- Import Condensed Font -->
@@ -670,10 +678,48 @@
     <div class="product-category">
         <h3>Pork Dumplings <span class="chinese-title-text">猪肉饺子</span></h3>
         <div class="product-grid">
-            <div class="product-item"><img src="Pork Onion.webp" loading="lazy" alt="Pork Onion Dumplings (猪肉洋葱饺子)"><b><p>PORK ONION <br> <span class="chinese-text">猪肉洋葱</span></p></b> <br> </b><p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Rich pork and caramelized onions, naturally sweet.</p> <p class="product-desc"></p><span class="chinese-text">甜美洋葱点缀鲜嫩猪肉，醇厚多汁。</span></p></div>
-            <div class="product-item"><img src="Pork Chives.webp" loading="lazy" alt="Pork Chives Dumplings (猪肉韭菜饺子)"><b><p>PORK CHIVES <br> <span class="chinese-text">猪肉韭菜</span></p></b> <br> </b><p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Bold, garlicky chives with juicy pork filling.</p> <p class="product-desc"></p><span class="chinese-text">浓郁蒜香韭菜搭配多汁猪肉，鲜香四溢。</span></p></div>
-            <div class="product-item"><img src="Pork Cabbage.webp" loading="lazy" alt="Pork Cabbage Dumplings (猪肉香菇包菜饺子)"><b><p>PORK MUSHROOM CABBAGE <br> <span class="chinese-text">猪肉香菇包菜</span></p></b> <br> </b><p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Pork, mushrooms, and cabbage in a hearty bite.</p> <p class="product-desc"></p><span class="chinese-text">猪肉香菇配爽脆白菜，家常风味</span>。</p></div>
-            <div class="product-item"><img src="Pork Sago.webp" loading="lazy" alt="Pork Sago Dumplings (猪肉香菇沙葛饺子)"><b><p>PORK MUSHROOM SAGO <br> <span class="chinese-text">猪肉香菇沙葛</span></p></b> <br> </b><p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Savory pork, mushrooms, and chewy sago.</p> <p class="product-desc"></p><span class="chinese-text">鲜美猪肉配香菇与弹牙沙葛， 口感丰富。</span></p></div>
+
+            <div class="product-item" onclick="openModal('Pork Onion.webp')">
+                <img src="Pork Onion.webp" loading="lazy" alt="Pork Onion Dumplings (猪肉洋葱饺子)">
+                <b>
+                <p>PORK ONION <br> <span class="chinese-text">猪肉洋葱</span></p>
+                </b>
+                <br>
+                <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+                <br>
+                <p class="product-desc">Rich pork and caramelized onions, naturally sweet.</p>
+                <span class="chinese-text">甜美洋葱点缀鲜嫩猪肉，醇厚多汁。</span>
+            </div>
+
+            <div class="product-item" onclick="openModal('Pork Chives.webp')">
+                <img src="Pork Chives.webp" loading="lazy" alt="Pork Chives Dumplings (猪肉韭菜饺子)">
+                <b><p>PORK CHIVES <br> <span class="chinese-text">猪肉韭菜</span></p></b>
+                <br>
+                <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+                <br>
+                <p class="product-desc">Bold, garlicky chives with juicy pork filling.</p>
+                <span class="chinese-text">浓郁蒜香韭菜搭配多汁猪肉，鲜香四溢。</span>
+            </div>
+            
+            <div class="product-item" onclick="openModal('Pork Cabbage.webp')">
+                <img src="Pork Cabbage.webp" loading="lazy" alt="Pork Cabbage Dumplings (猪肉香菇包菜饺子)">
+                <b><p>PORK MUSHROOM CABBAGE <br> <span class="chinese-text">猪肉香菇包菜</span></p></b>
+                <br>
+                <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+                <br>
+                <p class="product-desc">Pork, mushrooms, and cabbage in a hearty bite.</p>
+                <span class="chinese-text">猪肉香菇配爽脆白菜，家常风味。</span>
+            </div>
+            
+            <div class="product-item" onclick="openModal('Pork Sago.webp')">
+                <img src="Pork Sago.webp" loading="lazy" alt="Pork Sago Dumplings (猪肉香菇沙葛饺子)">
+                <b><p>PORK MUSHROOM SAGO <br> <span class="chinese-text">猪肉香菇沙葛</span></p></b>
+                <br>
+                <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+                <br>
+                <p class="product-desc">Savory pork, mushrooms, and chewy sago.</p>
+                <span class="chinese-text">鲜美猪肉配香菇与弹牙沙葛， 口感丰富。</span>
+            </div>
         </div>
     </div>
 
@@ -681,8 +727,25 @@
     <div class="product-category">
         <h3>Chicken Dumplings <span class="chinese-title-text">鸡肉饺子</span></h3>
         <div class="product-grid">
-            <div class="product-item"><img src="Chicken Onion.webp" loading="lazy" alt="Chicken Onion Dumplings (鸡肉洋葱饺子)"><b><p>Chicken Onion <br> <span class="chinese-text"> 鸡肉洋葱</span></p></b> <br> </b><p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Tender chicken and sweet onions wrapped in thin dough.</p> <p class="product-desc"></p><span class="chinese-text">鲜嫩鸡肉搭配香甜洋葱，皮薄多汁。</span></p></div>
-            <div class="product-item"><img src="Chicken Chives.webp" loading="lazy" alt="Chicken Chives Dumplings (鸡肉韭菜饺子)"><b><p>Chicken Chives <br> <span class="chinese-text"> 鸡肉韭菜</span></p></b> <br> </b><p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Fragrant chives and tender chicken in a classic bite.</p> <p class="product-desc"></p><span class="chinese-text">清香韭菜融合嫩滑鸡肉，口感鲜美。</span></p></div>
+            <div class="product-item" onclick="openModal('Chicken Onion.webp')">
+    <img src="Chicken Onion.webp" loading="lazy" alt="Chicken Onion Dumplings (鸡肉洋葱饺子)">
+    <b><p>CHICKEN ONION <br> <span class="chinese-text">鸡肉洋葱</span></p></b>
+    <br>
+    <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+    <br>
+    <p class="product-desc">Tender chicken and sweet onions wrapped in thin dough.</p>
+    <span class="chinese-text">鲜嫩鸡肉搭配香甜洋葱，皮薄多汁。</span>
+</div>
+
+<div class="product-item" onclick="openModal('Chicken Chives.webp')">
+    <img src="Chicken Chives.webp" loading="lazy" alt="Chicken Chives Dumplings (鸡肉韭菜饺子)">
+    <b><p>CHICKEN CHIVES <br> <span class="chinese-text">鸡肉韭菜</span></p></b>
+    <br>
+    <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+    <br>
+    <p class="product-desc">Fragrant chives and tender chicken in a classic bite.</p>
+    <span class="chinese-text">清香韭菜融合嫩滑鸡肉，口感鲜美。</span>
+</div>
         </div>
     </div>
 
@@ -690,8 +753,25 @@
     <div class="product-category">
         <h3>Vegetarian Dumplings <span class="chinese-title-text">素饺子</span></h3>
         <div class="product-grid">
-            <div class="product-item"><img src="Vegetarian I.webp" loading="lazy" alt="Vegetarian I Dumplings (素饺子1)"><b><p>VEGETARIAN DUMPLING I <br> <span class="chinese-text"> 素饺子1</p></span></b>  <br>  <p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Shiitake, glass noodles, carrot & sago.</p> <p class="product-desc"></p><span class="chinese-text">香菇、粉丝、胡萝卜、沙葛，清爽鲜美。</span></p></div>
-            <div class="product-item"><img src="Vegetarian II.webp" loading="lazy" alt="Vegetarian II Dumplings (素饺子2)"><b><p>VEGETARIAN DUMPLING II <br> <span class="chinese-text"> 素饺子2</p></span></b>  <br> <p class="product-desc">Sizes: 10, 30, 50 pcs.</p><br><p class="product-desc">Shiitake, glass noodles, carrot, sago & red fermented tofu.</p> <p class="product-desc"></p><span class="chinese-text">香菇、粉丝、胡萝卜、沙葛、红腐乳、风味独特。</span></p></div>
+            <div class="product-item" onclick="openModal('Vegetarian I.webp')">
+                <img src="Vegetarian I.webp" loading="lazy" alt="Vegetarian I Dumplings (素饺子1)">
+                <b><p>VEGETARIAN DUMPLING I <br> <span class="chinese-text">素饺子1</span></p></b>
+                <br>
+                <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+                <br>
+                <p class="product-desc">Shiitake, glass noodles, carrot & sago.</p>
+                <span class="chinese-text">香菇、粉丝、胡萝卜、沙葛，清爽鲜美。</span>
+            </div>
+            
+            <div class="product-item" onclick="openModal('Vegetarian II.webp')">
+                <img src="Vegetarian II.webp" loading="lazy" alt="Vegetarian II Dumplings (素饺子2)">
+                <b><p>VEGETARIAN DUMPLING II <br> <span class="chinese-text">素饺子2</span></p></b>
+                <br>
+                <p class="product-desc">Sizes: 10, 30, 50 pcs.</p>
+                <br>
+                <p class="product-desc">Shiitake, glass noodles, carrot, sago & red fermented tofu.</p>
+                <span class="chinese-text">香菇、粉丝、胡萝卜、沙葛、红腐乳、风味独特。</span>
+            </div>
         </div>
     </div>
 </section>
@@ -885,6 +965,18 @@ document.addEventListener("contextmenu", function (event) {
         }
     });
     </script>
+    <script>
+        function openModal(imageSrc) {
+    document.getElementById("zoomModal").style.display = "flex";
+    document.getElementById("modalImg").src = imageSrc;
+  }
+
+  function closeModal(event) {
+    if (event) event.stopPropagation();
+    document.getElementById("zoomModal").style.display = "none";
+  }
+  
+      </script>
 
 <a href="https://wa.me/60146749733?text=Hi%20Tong%20Ji%20Cheng.%20I'm%20interested%20in%20your%20product." 
    class="whatsapp-float" target="_blank">
@@ -910,8 +1002,64 @@ document.addEventListener("contextmenu", function (event) {
     .whatsapp-float img:hover {
         transform: scale(1.1);  
     }
-    
+
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .modal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50px; 
+}
+
+  @media (min-width: 768px) {
+    .modal-content {
+      max-width: 60%; 
+    }
+  }
 </style>
+
+
+<div class="product" onclick="openModal('product-image.jpg')">
+  <img src="product-image.jpg" alt="Product" width="200">
+</div>
+
+
+<div id="zoomModal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal(event)">X</button>
+        <img id="modalImg" src="" alt="Zoomed Image">
+    </div>
+</div>
+    
 
 
 </body>
