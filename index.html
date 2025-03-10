@@ -48,9 +48,9 @@
             margin-bottom: 70px;
             top: 90px;
             position: relative;
-            z-index: 2; /* Ensure it stays above the overlay */
-            color: white; /* Ensure visibility */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Improves readability */
+            z-index: 2; 
+            color: white; 
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
         }
 
         .hero p {
@@ -75,7 +75,7 @@
             transform: scale(1.05);
         }
 
-        /* Transparent Header with Centered Navigation */
+        
         .header {
             position: fixed;
             top: 0;
@@ -86,8 +86,8 @@
             justify-content: center;
             align-items: center;
             padding: 15px 5%;
-            background-color: rgba(0, 0, 0, 0.3); /* ✅ Adds a semi-transparent black layer */
-            background-blend-mode: darken; /* ✅ Blend the color with the image */
+            background-color: rgba(0, 0, 0, 0.3); 
+            background-blend-mode: darken; 
             z-index: 1000;
         }
         .header::before {
@@ -98,8 +98,8 @@
     width: 100%;
     height: 100%;
     background: url('web-header.webp') center/cover no-repeat;
-    opacity: 0.7; /* Adjust transparency (0 = fully transparent, 1 = fully visible) */
-    z-index: -1; /* Ensures it stays behind the content */
+    opacity: 0.7; 
+    z-index: -1; 
 }
 
         .logo {
@@ -130,14 +130,13 @@
             color: #c1b41d;
         }
 
-        /* Mobile Menu */
         .menu-toggle {
             display: none;
             font-size: 30px;
             cursor: pointer;
             color: #c1b41d;
-            position: fixed; /* ✅ Change from absolute to fixed */
-            top: 20px; /* ✅ Adjust position so it stays at the top */
+            position: fixed; 
+            top: 20px; 
             right: 5%;
             z-index: 1100;
         }
@@ -180,7 +179,7 @@
         }
         .social-icons {
             position: absolute;
-            right: 50px; /* Adjust this to move left */
+            right: 50px; 
             top: 48%;
             transform: translateY(-50%);
             display: flex;
@@ -188,7 +187,7 @@
         }
 
         .social-icons a img {
-            width: 24px; /* Adjust size */
+            width: 24px; 
             height: 24px;
             transition: transform 0.3s;
         }
@@ -196,18 +195,18 @@
         .social-icons a:hover img {
             transform: scale(1.2);
         }
-        /* Move icons for Mobile (max 768px) */
+        
         @media (max-width: 480px) {
             .social-icons {
-                right: 45px; /* Move even more left */
+                right: 45px; 
                 bottom: 17%;
             }
         }
 
-        /* Move icons for Tablets (768px - 1024px) */
+        
         @media (min-width: 768px) and (max-width: 1024px) {
             .social-icons {
-                right: 80px; /* Adjust for tablet view */
+                right: 80px; 
                 bottom: 17%;
             }
         }
@@ -219,7 +218,7 @@
         }
 
 
-        /* 🔹 About Us Section */
+        
         .about-us {
     padding: 80px 5%;
     background: url('about-us.webp') no-repeat top center/cover;
@@ -230,7 +229,7 @@
     min-height: 100vh;
 }
 
-/* ✅ Dark Overlay for Readability */
+
 .about-us::before {
     content: "";
     position: absolute;
@@ -242,7 +241,7 @@
     z-index: 1;
 }
 
-/* ✅ Ensuring Text Appears Above Overlay */
+
 .about-container {
     position: relative;
     z-index: 2;
@@ -250,12 +249,12 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* ✅ Allows wrapping if needed */
+    flex-wrap: wrap; 
 }
 
-/* ✅ Text Wrapping Fix */
+
 .about-text {
-    max-width: 400px; /* ✅ Controls text width */
+    max-width: 400px; 
     text-align: left;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -264,23 +263,23 @@
 }
 
 .about-text h1 {
-    font-size: 65px; /* Adjust if necessary */
+    font-size: 65px; 
     font-weight: bold;
     margin-bottom: 0px;
     position: relative;
-    z-index: 2; /* Ensure it stays above the overlay */
-    color: white; /* Ensure visibility */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Improves readability */
+    z-index: 2; 
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
 }
 
-/* ✅ Responsive Image */
+
 .about-image img {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
 }
 
-/* ✅ Mobile Optimization */
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -288,16 +287,16 @@
     }
 
     .about-text {
-        max-width: 100%; /* ✅ Full width for better readability */
+        max-width: 100%; 
         text-align: center;
     }
 
     .about-text h1 {
-        font-size: 50px; /* ✅ Reduce size for smaller screens */
+        font-size: 50px; 
     }
 
     .about-image img {
-        max-width: 90%; /* ✅ Reduce image size on smaller screens */
+        max-width: 90%; 
     }
 }
 .chinese-title-text { 
@@ -313,37 +312,37 @@
   font-size: 19px;
 }
 
-/* ✅ Products Section */
+
 .products-section {
     background-color: #161f28ff;
     color: white;
     padding: 50px 5%;
     text-align: center;
 }
-/* ✅ Ensure Product Section Titles Are Large */
+
 .products-section h1 {
-    font-size: 65px; /* Adjust if necessary */
+    font-size: 65px; 
     font-weight: bold;
     margin-bottom: 0px;
     position: relative;
-    z-index: 2; /* Ensure it stays above the overlay */
-    color: white; /* Ensure visibility */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Improves readability */
+    z-index: 2; 
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
 }
 
 .products-section h3 {
-    font-size: 24px; /* Adjust for category titles */
+    font-size: 24px; 
     font-weight: bold;
     margin-top: 20px;
 }
 
-/* ✅ Better Product Grid */
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Force 2x2 layout */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
-    justify-content: center; /* Center align the grid */
-    max-width: 600px; /* Adjust width if necessary */
+    justify-content: center; 
+    max-width: 600px; 
     margin: 0 auto;
 }
 
@@ -361,10 +360,10 @@
     border-radius: 10px;
 }
 .product-desc {
-    font-size: 0.9rem;  /* Smaller font */
-    color: #ddd;  /* Light gray text */
-    margin-top: 5px;  /* Spacing */
-    text-align: center;  /* Center text */
+    font-size: 0.9rem;  
+    color: #ddd;  
+    margin-top: 5px;  
+    text-align: center;  
 }
 .where-to-buy {
     padding: 50px 5%;
@@ -376,16 +375,16 @@
     min-height: 100vh;
 }
 .where-to-buy h2 {
-    font-size: 65px; /* Match product title size */
+    font-size: 65px; 
     font-weight: bold;
     margin-bottom: 0px;
     position: relative;
-    z-index: 2; /* Ensure it stays above the overlay */
-    color: white; /* Ensure visibility */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Improves readability */
+    z-index: 2; 
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
 }
 
-/* Dark overlay for readability */
+
 .where-to-buy::before {
     content: "";
     position: absolute;
@@ -397,7 +396,7 @@
     z-index: 1;
 }
 
-/* Ensuring content appears above the overlay */
+
 .where-container {
     position: relative;
     z-index: 2;
@@ -407,7 +406,7 @@
     gap: 20px;
 }
 
-/* Map container */
+
 .map-container {
     width: 100%;
     max-width: 700px;
@@ -415,24 +414,24 @@
 }
 
 #where-to-buy {
-    background-image: url('buy-now.webp'); /* Change to your actual image path */
+    background-image: url('buy-now.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px;
-    color: white; /* Adjust text color for better visibility */
+    color: white; 
     text-align: center;
 }
 @media (max-width: 1024px) {
     .where-to-buy {
-        width: 100vw; /* Adjust width for tablet */
+        width: 100vw; 
         padding: 40px 4%;
         min-height: 80vh;
     }
 }
 @media (max-width: 767px) {
     .where-to-buy {
-        width: 100vw; /* Adjust width for mobile */
+        width: 100vw; 
         padding: 30px 3%;
         min-height: 70vh;
         margin: 0 auto;
@@ -448,7 +447,7 @@
     min-height: 100vh;
 }
 
-/* Dark overlay for readability */
+
 .news-section::before {
     content: "";
     position: absolute;
@@ -460,15 +459,15 @@
     z-index: 1;
 }
 
-/* Ensure the title matches the "Our Products" title */
+
 .news-section .section-title {
-    font-size: 65px; /* Match product title size */
+    font-size: 65px; 
     font-weight: bold;
     margin-bottom: 0px;
     position: relative;
-    z-index: 2; /* Ensure it stays above the overlay */
-    color: white; /* Ensure visibility */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Improves readability */
+    z-index: 2; 
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
 }
 .fb-container {
     position: relative;
@@ -478,12 +477,12 @@
 }
 
 .fb-page {
-    width: 100% !important;  /* Makes it responsive */
+    width: 100% !important;  
     max-width: 700px;
     height: 500px;
 }
 
-/* For Tablets */
+
 @media (max-width: 768px) {
     .fb-page {
         max-width: 700px;
@@ -491,7 +490,7 @@
     }
 }
 
-/* For Mobile */
+
 @media (max-width: 480px) {
     .fb-page {
         max-width: 290px;
@@ -508,7 +507,7 @@
     min-height: 100vh;
             }
 
-            /* Dark Overlay */
+
 .contact-section::before {
     content: "";
     position: absolute;
@@ -516,22 +515,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Adjust darkness here */
-    z-index: 1; /* Ensure it's behind text */
-    pointer-events: none; /* ✅ Allows clicks to pass through */
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+    pointer-events: none; 
 }
-/* Ensure content is above overlay */
+
 .contact-section .section-title,
 .contact-icons {
-    font-size: 65px; /* Match product title size */
+    font-size: 65px; 
     font-weight: bold;
     margin-bottom: 0px;
     position: relative;
-    z-index: 2; /* Ensure it stays above the overlay */
-    color: white; /* Ensure visibility */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Improves readability */
+    z-index: 2; 
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
     position: relative;
-    z-index: 2; /* ✅ Higher than overlay */
+    z-index: 2; 
 }
 
 .contact-icons {
@@ -542,24 +541,24 @@
     margin-top: 120px;
 }
 
-/* ✅ Ensures icon size remains reasonable on desktop */
+
 .contact-icons a {
     width: 100px;
     height: 100px;
 }
 
-/* ✅ Ensures images don't scale too large */
+
 .contact-icons img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-/* ✅ Apply only on mobile (below 768px) */
+
 @media (max-width: 768px) {
     .contact-icons {
-        max-width: 320px; /* ✅ Limits width to ensure 3 icons per row */
-        margin: 0 auto; /* ✅ Centers the icons */
+        max-width: 320px; 
+        margin: 0 auto; 
     }
 
     .contact-icons a {
@@ -574,7 +573,7 @@
     object-fit: contain;
 }
 .footer {
-    background: #161f28; /* Matches your brand color */
+    background: #161f28; 
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -589,7 +588,7 @@
 }
 
 .footer-links a:hover {
-    color: #c1b41d; /* Gold hover effect */
+    color: #c1b41d; 
 }
 
 .copyright {
@@ -615,7 +614,7 @@
                 <li><a href="https://www.youtube.com/@TONGJICHENG/shorts" target="_blank">Cooking Tips</a></li>
             </ul>
         </nav>
-         <!-- Social Icons -->
+         
     <div class="social-icons">
         <a href="https://web.facebook.com/profile.php?id=61558701981289" target="_blank"><img src="facebook.webp" alt="Facebook"></a>
         <a href="https://www.instagram.com/tongjicheng5/?fbclid=IwY2xjawIWcARleHRuA2FlbQIxMAABHQraiEiAHKM7hzxHtD4prK6dtrOkJKCjQGUz6IDiu3x02OueCMuhSeqvbw_aem_eI2my_OhN8xbot-V3Vrezw#" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
@@ -641,7 +640,7 @@
         </div>
     </div>
 
-    <!-- About Us Section -->
+
 <section id="about" class="about-us">
     <div class="about-container">
         <div class="about-text">
@@ -654,15 +653,15 @@
             <img src="dumpling-pic.webp"  loading="lazy" alt="About Us">
         </div>
     </div>
-</section> <!-- ✅ Fixed Closing Tag -->
+</section> 
 
 <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 
-<!-- Products Section -->
+
 <section id="our-products" class="products-section">
     <h1>Products</h1>
-    <!-- Your product listings here -->
-    <!--  Dumplings -->
+    
+    
     <div class="product-category">
         <h3>Pork Dumplings <span class="chinese-title-text">猪肉饺子</span></h3>
         <div class="product-grid">
@@ -673,7 +672,7 @@
         </div>
     </div>
 
-    <!-- Chicken Dumplings -->
+
     <div class="product-category">
         <h3>Chicken Dumplings <span class="chinese-title-text">鸡肉饺子</span></h3>
         <div class="product-grid">
@@ -682,7 +681,7 @@
         </div>
     </div>
 
-    <!-- Vegetarian Dumplings -->
+
     <div class="product-category">
         <h3>Vegetarian Dumplings <span class="chinese-title-text">素饺子</span></h3>
         <div class="product-grid">
@@ -692,13 +691,13 @@
     </div>
 </section>
 
-<!-- Where to Buy Section -->
+
 <section id="where-to-buy" class="where-to-buy">
     <div class="where-container">
         <h2>Buy Now</h2>
         <p>Find our dumplings at your nearest store using the map below.</p>
         
-        <!-- Google My Maps Embed -->
+
         <div class="map-container">
             <iframe 
                 src="https://www.google.com/maps/d/embed?mid=1I2m7invdk30qQderY1sZDpivgGixxzc&ehbc=2E312F" 
@@ -721,8 +720,8 @@
 }
 
 .product-category h3 {
-    margin-top: 40px;  /* More space above the title */
-    margin-bottom: 20px; /* Add space below the title */
+    margin-top: 40px;  
+    margin-bottom: 20px; 
     font-size: 1.8rem;
 }
 
@@ -732,8 +731,8 @@
     gap: 20px;
     justify-content: center;
     max-width: 600px;
-    margin: 20px auto; /* Adds space between sections */
-    padding-top: 10px; /* Slight padding inside */
+    margin: 20px auto; 
+    padding-top: 10px; 
 }
 
 .product-item {
@@ -751,7 +750,7 @@
 
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* Ensure 2 products per row */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 </style>       
@@ -821,7 +820,7 @@
         function toggleMenu() {
     var menu = document.getElementById("mobileMenu");
     if (menu.style.right === "0px") {
-        menu.style.right = "-100%"; // ✅ Better transition for mobile
+        menu.style.right = "-100%"; 
         document.removeEventListener("click", closeMenuOnOutsideClick);
     } else {
         menu.style.right = "0px";
@@ -835,25 +834,25 @@
     var toggleButton = document.querySelector(".menu-toggle");
 
     if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
-        menu.style.right = "-100%"; // ✅ Better transition
+        menu.style.right = "-100%"; 
         document.removeEventListener("click", closeMenuOnOutsideClick);
     }
 }
-// 🔹 Disable Right-Click on Images
+
 document.addEventListener("contextmenu", function (event) {
         if (event.target.tagName === "IMG") {
             event.preventDefault();
         }
     });
 
-    // 🔹 Disable Dragging Images
+
     document.addEventListener("dragstart", function (event) {
         if (event.target.tagName === "IMG") {
             event.preventDefault();
         }
     });
 
-    // 🔹 Disable Print Screen (PrtSc)
+
     document.addEventListener("keydown", function (event) {
         if (event.key === "PrintScreen") {
             event.preventDefault();
@@ -861,15 +860,15 @@ document.addEventListener("contextmenu", function (event) {
         }
     });
 
-    // 🔹 Clear Clipboard to Prevent Paste of Screenshots
+
     document.addEventListener("keyup", function (event) {
         if (event.key === "PrintScreen") {
-            navigator.clipboard.writeText(""); // Clears clipboard
+            navigator.clipboard.writeText(""); 
             alert("Screenshots are disabled on this site.");
         }
     });
 
-    // 🔹 Disable Developer Tools (F12, Ctrl+Shift+I, Ctrl+U)
+
     document.addEventListener("keydown", function (event) {
         if (event.ctrlKey && (event.key === "u" || event.key === "U" || 
             event.key === "i" || event.key === "I" || event.key === "j" || event.key === "J" || 
@@ -891,12 +890,12 @@ document.addEventListener("contextmenu", function (event) {
 
 <style>
     .whatsapp-float {
-        position: fixed;  /* Makes it stay in place */
-        bottom: 20px;  /* Adjust distance from bottom */
-        right: 20px;  /* Adjust distance from right */
-        width: 40px;  /* Adjust button size */
+        position: fixed;  
+        bottom: 20px;  
+        right: 20px;  
+        width: 40px;  
         height: 40px;
-        z-index: 1000;  /* Ensures it's above other content */
+        z-index: 1000;  
     }
     .whatsapp-float img {
         width: 100%;
@@ -906,7 +905,7 @@ document.addEventListener("contextmenu", function (event) {
         transition: transform 0.2s ease-in-out;
     }
     .whatsapp-float img:hover {
-        transform: scale(1.1);  /* Slight zoom effect on hover */
+        transform: scale(1.1);  
     }
     
 </style>
